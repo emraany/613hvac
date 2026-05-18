@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-label="613 HVAC">
+  <rect x="0" y="8" width="56" height="48" rx="8" fill="#0B3D91"/>
+  <text x="28" y="42" font-family="Archivo, system-ui, sans-serif" font-weight="900" font-size="22" text-anchor="middle" fill="#ffffff">613</text>
+  <text x="68" y="36" font-family="Archivo, system-ui, sans-serif" font-weight="800" font-size="22" fill="#0F172A">613 HVAC</text>
+  <text x="68" y="52" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="9" letter-spacing="2" fill="#F26A1F">OTTAWA HEATING &amp; COOLING</text>
+</svg>

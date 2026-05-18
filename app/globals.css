@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand: 11 61 145;
+    --accent: 242 106 31;
+    --emergency: 220 38 38;
+    --ink: 15 23 42;
+    --surface: 248 250 252;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white text-ink antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+
+  /* Safe area for sticky mobile bar */
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-page px-5 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-base font-semibold tracking-tight transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+    min-height: 48px;
+  }
+
+  .btn-primary {
+    @apply btn bg-accent text-white shadow-cta hover:bg-accent-600 focus-visible:ring-accent;
+  }
+
+  .btn-brand {
+    @apply btn bg-brand text-white hover:bg-brand-800 focus-visible:ring-brand;
+  }
+
+  .btn-emergency {
+    @apply btn bg-emergency text-white hover:bg-emergency-dark focus-visible:ring-emergency;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-white/80 bg-transparent text-white hover:bg-white hover:text-brand focus-visible:ring-white;
+  }
+
+  .btn-outline-dark {
+    @apply btn border-2 border-brand bg-transparent text-brand hover:bg-brand hover:text-white focus-visible:ring-brand;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-accent;
+  }
+
+  .section {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .section-tight {
+    @apply py-12 sm:py-14 lg:py-16;
+  }
+}

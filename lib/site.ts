@@ -10,14 +10,14 @@ export const site = {
     "Ottawa heating, cooling and hot water specialists. Same-day service, 24/7 emergency response, honest pricing.",
 
   phone: {
-    display: "(613) 555-0100",
-    tel: "+16135550100",
+    display: "(613) 265-7191",
+    tel: "+16132657191",
   },
   sms: {
-    display: "(613) 555-0100",
-    tel: "+16135550100",
+    display: "(613) 265-7191",
+    tel: "+16132657191",
   },
-  email: "info@613hvac.com",
+  email: "macomfortsolutions@gmail.com",
   address: {
     locality: "Ottawa",
     region: "ON",
@@ -114,10 +114,6 @@ export const services: Service[] = [
       {
         q: "Do you service my brand?",
         a: "Yes — we work on Lennox, Carrier, Trane, Goodman, Rheem, Napoleon, Keeprite and every other major brand sold in Ottawa.",
-      },
-      {
-        q: "Is financing available?",
-        a: "Yes. We offer 0% financing options on most new furnace installs. Ask us during your quote.",
       },
     ],
     accent: "brand",
@@ -299,10 +295,6 @@ export const offers = [
     title: "Free in-home quotes",
     body: "No pressure, no obligation. We'll give you straight numbers in writing.",
   },
-  {
-    title: "0% financing on installs",
-    body: "Approved financing options on qualifying new furnace, AC and heat pump installs.",
-  },
 ];
 
 export const areasServed = [
@@ -372,7 +364,6 @@ export const trustBadges = [
   "Licensed & Insured",
   "TSSA Gas G2",
   "24/7 Emergency",
-  "Financing Available",
   "5★ Local Reviews",
 ];
 

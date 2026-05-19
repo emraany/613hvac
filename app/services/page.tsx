@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import SectionHeading from "@/components/SectionHeading";
 import ServicesGrid from "@/components/ServicesGrid";
 import CTABand from "@/components/CTABand";
 import Certifications from "@/components/Certifications";
-import FAQ from "@/components/FAQ";
-import { generalFaqs } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -81,22 +78,6 @@ export default function ServicesIndexPage() {
       </section>
 
       <CTABand />
-
-      <section className="section">
-        <div className="container-page">
-          <SectionHeading eyebrow="Good to know" title="Common questions." />
-          <div className="mt-8">
-            <FAQ items={generalFaqs} />
-          </div>
-          <p className="mt-8 text-sm text-slate-600">
-            Have a question we didn&apos;t answer?{" "}
-            <Link href="/contact" className="font-bold text-brand underline">
-              Get in touch
-            </Link>
-            .
-          </p>
-        </div>
-      </section>
     </>
   );
 }

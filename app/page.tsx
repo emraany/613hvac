@@ -10,8 +10,7 @@ import Certifications from "@/components/Certifications";
 import CTABand from "@/components/CTABand";
 import QuoteForm from "@/components/QuoteForm";
 import PhotoSlot from "@/components/PhotoSlot";
-import FAQ from "@/components/FAQ";
-import { generalFaqs, site } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export default function HomePage() {
   return (
@@ -141,17 +140,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Common questions"
-            title="The stuff homeowners usually ask."
-          />
-          <div className="mt-8">
-            <FAQ items={generalFaqs} />
-          </div>
-        </div>
-      </section>
     </>
   );
 }
